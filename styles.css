@@ -1,5 +1,5 @@
 :root{
-    background-color: bisque;
+    background-color:lightgray;
 }
 
 
@@ -8,7 +8,49 @@ body {
     background-color: var(background-color);
 }
 
+fieldset{
+    background-color:thistle;
+}
 
+nav ol {
+    display: flex;
+    list-style: none;
+}
 
+nav ol li {
+    flex-grow: 1;
+
+}
 
 /*----------------------------------------------- radiobuttons ----------------------------------------------------*/
+.radio-group {
+    display: flex;
+  }
+  
+  label {
+    display: flex;
+    margin: 0 10px;
+    cursor: pointer;
+    
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    height: 2.3em;
+    width: 2em;
+  }
+  
+  .emoji {
+    font-size: 32px;
+  }
+
+  .emoji:hover {
+    filter: hue-rotate(90deg);
+  }
+  
+  input[type="radio"]:checked + .emoji {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 3px black);
+  }
+  
