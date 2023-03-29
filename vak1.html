@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="color-scheme" content="dark light" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="./index.html">Je gegevens</a>
+                </li>
+                <li>
+                    <a href="./vak1.html">vak 1</a>
+                </li>
+                <li>
+                    <a href="./vak2.html">vak 2</a>
+                </li>
+                <li>
+                    <a href="">vak 3</a>
+                </li>
+                <li>
+                    <a href="">vak 4</a>
+                </li>
+                <li>
+                    <a href="">vak 5</a>
+                </li>
+                <li>
+                    <a href="">vak 6</a>
+                </li>
+                <li>
+                    <a href="">vak 7</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Enquete over de vakken van minor Web Development</h1>
+        <br>
+        <form id="form" action="./vak2.html">
+            <!-- vak 1 -->
+            <h2>Vak 1</h2>
+            <fieldset>
+                <legend>Vak 1</legend>
+                <h2>Web App from scratch</h2>
+                <p>Docenten: Robert Spier en Joost Faber</p>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Welke week ging dit vak van start?</legend>
+                <label><input type="week" name="wafs-eerste-week" required></label>
+                <br>
+                <br>
+                <legend>Welke week heb je dit vak afgerond?</legend>
+                <label><input type="week" name="wafs-laatste-week" required></label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <label for="wafs-beoordeling">Hoe moeilijk vond je de lesstof? Hoe hoger het getal hoe
+                    moeilijker.</label>
+                <br>
+                <label for="1"><input type="radio" name="cijfer" required>1</label>
+                <label for="2"><input type="radio" name="cijfer">2</label>
+                <label for="3"><input type="radio" name="cijfer">3</label>
+                <label for="4"><input type="radio" name="cijfer">4</label>
+                <label for="5"><input type="radio" name="cijfer">5</label>
+                <label for="6"><input type="radio" name="cijfer">6</label>
+                <label for="7"><input type="radio" name="cijfer">7</label>
+                <label for="8"><input type="radio" name="cijfer">8</label>
+                <label for="9"><input type="radio" name="cijfer">9</label>
+                <label for="10"><input type="radio" name="cijfer">10</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <label for="wafs-beoordeling">Hoe goed vond je de uitleg die gegeven werd? Hoe hoger het getal hoe beter
+                    de uitleg.</label>
+                <br>
+                <label for="1"><input type="radio" name="cijfer" required>1</label>
+                <label for="2"><input type="radio" name="cijfer">2</label>
+                <label for="3"><input type="radio" name="cijfer">3</label>
+                <label for="4"><input type="radio" name="cijfer">4</label>
+                <label for="5"><input type="radio" name="cijfer">5</label>
+                <label for="6"><input type="radio" name="cijfer">6</label>
+                <label for="7"><input type="radio" name="cijfer">7</label>
+                <label for="8"><input type="radio" name="cijfer">8</label>
+                <label for="9"><input type="radio" name="cijfer">9</label>
+                <label for="10"><input type="radio" name="cijfer">10</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <label for="wafs-beoordeling">Hoe goed begrijp je de lesstof? Hoe hoger het getal hoe beter je het
+                    begrijpt.</label>
+                <br>
+                <label for="1"><input type="radio" name="cijfer" required>1</label>
+                <label for="2"><input type="radio" name="cijfer">2</label>
+                <label for="3"><input type="radio" name="cijfer">3</label>
+                <label for="4"><input type="radio" name="cijfer">4</label>
+                <label for="5"><input type="radio" name="cijfer">5</label>
+                <label for="6"><input type="radio" name="cijfer">6</label>
+                <label for="7"><input type="radio" name="cijfer">7</label>
+                <label for="8"><input type="radio" name="cijfer">8</label>
+                <label for="9"><input type="radio" name="cijfer">9</label>
+                <label for="10"><input type="radio" name="cijfer">10</label>
+            </fieldset>
+            <br>
+
+            <button type="submit">ga verder</button>
+        </form>
+    </main>
+    <footer></footer>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
