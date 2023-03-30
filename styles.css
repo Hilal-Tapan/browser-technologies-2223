@@ -1,38 +1,79 @@
-:root{
-    background-color:lightgray;
+:root {
+    --background-color: lightgray;
+    --fieldset-color:white;
+    --button-color:white;
+    --button-text:black;
+    --nav-color:black;
+    --nav-text:white;
+    --drop-shadow:violet;
 }
 
+@media (prefers-color-scheme: dark ) {
+    :root {
+        --background-color: gray;
+        --fieldset-color:black;
+        --button-color:black;
+        --button-text:white;
+        --nav-color:white;
+        --nav-text:black;
+        --drop-shadow:black;
+    }
+}
 
-/*----------------------------------------------- styling --------------------------------------------------------*/
+/*----------------------------------------------- algemene styling --------------------------------------------------------*/
 body {
-    background-color: var(background-color);
+    background-color: var(--background-color);
     padding: 1em;
 }
 
 h1 {
-    display:grid;
+    display: grid;
     place-content: center;
     margin-bottom: 0;
 }
-fieldset{
-    background-color:white;
+
+fieldset {
+    background-color: var(--fieldset-color);
+}
+
+fieldset {
+    border-radius: 1em;
+    padding: 1em;
+    border: black solid .3em;
+    width: 80vw;
 }
 
 nav ol {
     display: flex;
     list-style: none;
+    gap: 1em;
     padding: 0;
 }
 
 nav ol li {
     flex-grow: 1;
-    font-size: 2vw;
+    font-size: 1em;
+    background-color: var(--nav-color);
+    border-radius: 1em;
+    display: grid;
+    place-content: center;
+    padding: .5em 0 .5em 0;
 }
 
 nav ol li a {
-    color: black;
+    color: var(--nav-text);
+    text-decoration: none;
 }
-/*----------------------------------------------- all forms --------------------------------------------------------*/
+
+nav ol li:has(a.current) {
+    filter:opacity(60%);
+}
+nav ol li:hover{
+    filter: drop-shadow(0 0 1em var(--drop-shadow));
+
+
+}
+
 #form {
     display: grid;
     place-content: center;
@@ -42,61 +83,99 @@ nav ol li a {
     width: 10em;
     height: 2em;
     min-width: 2em;
-    background-color:white;
+    /* background-color: var(--button-color); */
+    color: var(--button-text);
     border-radius: 1em;
     border: black .2em solid;
-
-}
-/*----------------------------------------------- gegevens --------------------------------------------------------*/
-fieldset {
-    border-radius: 1em;
-    padding: 1em;
-    /* width: 50vw; */
-    border:  black solid .3em;
-    min-width: 17em;   
 }
 
-#gegevens label {
-    display:flex;
-    flex-direction: column;
-
-}
-
-#gegevens label input {
-    width: 50vw;
-    border-radius: 1em;
-    padding: .5em;
-    border: black .2em solid;
+#form button:hover {
+    background-color: var(--drop-shadow);
 }
 
 /*----------------------------------------------- radiobuttons ----------------------------------------------------*/
 .radio-group {
     display: flex;
-  }
-  
-  label {
+}
+
+label {
     display: flex;
     margin: 0 1vw;
     cursor: pointer;
-  }
-  
-  input[type="radio"] {
+}
+
+input[type="radio"] {
     position: absolute;
     opacity: 0;
     height: 2.3em;
     width: 2em;
-  }
-  
-  .emoji {
-    font-size: 3vw;
-  }
+    cursor: pointer;
+}
 
-  .emoji:hover {
+.emoji {
+    font-size: 3vw;
+}
+
+.emoji:hover {
     filter: hue-rotate(90deg);
-  }
-  
-  input[type="radio"]:checked + .emoji {
+}
+
+input[type="radio"]:checked+.emoji {
     transform: scale(1.3);
-    filter: drop-shadow(0 0 3px black);
-  }
-  
+    filter: drop-shadow(0 0 3px var(--drop-shadow));
+    filter: hue-rotate(90deg);
+}
+
+/*----------------------------------------------- gegevens --------------------------------------------------------*/
+#gegevens label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#gegevens label input {
+    border-radius: 1em;
+    padding: .5em;
+    border: black .2em solid;
+}
+
+#gegevens input[type="text"]:valid {
+    flex: 1;
+}
+
+#gegevens label:has(input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid)::after {
+    content: '✓';
+    color: green;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+}
+
+#gegevens label:has(input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid)::after {
+    content: "verplicht veld";
+    color: red;
+    font-size: .8em;
+    padding-left: .5vw;
+}
+
+
+
+
+/* label.has input[type="text"]:invalid + span::after,
+label.has input[type="number"]:invalid + span::after,
+label.has input[type="email"]:invalid + span::after {
+  content: "Dit veld is verplicht";
+  color: red;
+  font-size: 1.2vw;
+  padding-left: 0.5vw;
+  display: none;
+}
+
+button[type="submit"]:focus + #gegevens label.has input:invalid + span::after {
+  display: inline-block;
+} */
+
+
+
+
+/*----------------------------------------------- ? --------------------------------------------------------*/

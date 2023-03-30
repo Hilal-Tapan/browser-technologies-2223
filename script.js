@@ -78,6 +78,62 @@ for (let i = 0; i < fieldsets.length; i++) {
 }
 
 
+/////////////////////////////////////////////////////////////////// button submit feedback code
+// const form = document.querySelector("#form");
+
+// form.addEventListener("submit", (event) => {
+//   // prevent the form from submitting
+//   event.preventDefault();
+
+//   // get all input fields within the form
+//   const inputs = form.querySelectorAll("input");
+
+//   // loop over each input field
+//   inputs.forEach((input) => {
+//     // check if the input field has a value
+//     if (input.value) {
+//       // if it has a value, add a class to style it
+//       input.classList.add("has-value");
+//       input.classList.remove("no-value");
+//     } else {
+//       // if it doesn't have a value, add another class to style it
+//       input.classList.add("no-value");
+//       input.classList.remove("has-value");
+//     }
+//   });
+
+//   // check if all required fields have a value
+//   const isValid = Array.from(inputs).every(
+//     (input) => !input.required || input.value
+//   );
+
+//   // if all required fields have a value, submit the form
+//   if (isValid) {
+//     form.submit();
+//   }
+// });
+///////////////////////////////////////////////////////////////////
+
+// const fout = document.querySelectorAll("input:not(input[type="radio"])");
+
+// fout.classList.add("fout");
+
+// console.log(fout);
+
+
+// onSubmit omdat je dit ook met enter kan doen
+// querySelectorAll alle formuliervelden 
+// loop hierover heen
+// je controleerd of het een waarde heeft
+// als het wel een waarde heeft voeg een class toe en stijl deze
+// als het geen waarde heeft class toevoegen en css content erin zetten
+// als dit niet screenreader dan innerhtml
+
+// als het true is dan gaat die submitten
+// als die false is word die niet opgestuurd
+// var invalid = false
+
+
 
 
 // code zonder for loop door alle inputs
