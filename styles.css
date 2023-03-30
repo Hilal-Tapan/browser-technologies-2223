@@ -6,20 +6,67 @@
 /*----------------------------------------------- styling --------------------------------------------------------*/
 body {
     background-color: var(background-color);
+    padding: 1em;
 }
 
+h1 {
+    display:grid;
+    place-content: center;
+    margin-bottom: 0;
+}
 fieldset{
-    background-color:thistle;
+    background-color:white;
 }
 
 nav ol {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 nav ol li {
     flex-grow: 1;
+    font-size: 2vw;
+}
 
+nav ol li a {
+    color: black;
+}
+/*----------------------------------------------- all forms --------------------------------------------------------*/
+#form {
+    display: grid;
+    place-content: center;
+}
+
+#form button {
+    width: 10em;
+    height: 2em;
+    min-width: 2em;
+    background-color:white;
+    border-radius: 1em;
+    border: black .2em solid;
+
+}
+/*----------------------------------------------- gegevens --------------------------------------------------------*/
+fieldset {
+    border-radius: 1em;
+    padding: 1em;
+    /* width: 50vw; */
+    border:  black solid .3em;
+    min-width: 17em;   
+}
+
+#gegevens label {
+    display:flex;
+    flex-direction: column;
+
+}
+
+#gegevens label input {
+    width: 50vw;
+    border-radius: 1em;
+    padding: .5em;
+    border: black .2em solid;
 }
 
 /*----------------------------------------------- radiobuttons ----------------------------------------------------*/
@@ -29,9 +76,8 @@ nav ol li {
   
   label {
     display: flex;
-    margin: 0 10px;
+    margin: 0 1vw;
     cursor: pointer;
-    
   }
   
   input[type="radio"] {
@@ -42,7 +88,7 @@ nav ol li {
   }
   
   .emoji {
-    font-size: 32px;
+    font-size: 3vw;
   }
 
   .emoji:hover {

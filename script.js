@@ -10,7 +10,7 @@ if (inputFirstName) {
     inputFirstName.oninput = function (e) {
         localStorage.setItem("firstName", inputFirstName.value);
     }
-    inputFirstName.value = localStorage.getItem("firstName");
+    // inputFirstName.value = localStorage.getItem("firstName");
 }
 
 if (inputLastName) {
@@ -37,19 +37,66 @@ if (inputEmail) {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // VAK 1
-var inputWafsVraag1 = document.querySelectorAll('[name="wafs-vraag-1"]');
+var inputWafsVraag1 = document.querySelectorAll('[name="wafs-vraag-1"],[name="wafs-vraag-2"]');
 
 if (inputWafsVraag1) {
     // Loop through all of the selected input elements
     for (var i = 0; i < inputWafsVraag1.length; i++) {
-        var inputElement = inputWafsVraag1[i];
+        // var definieerd een variabele voor een hele functie
+        // let definieerd een variabele voor een code block {}
+        // dat is wat we hier willen want input elements blijft dus bestaan.
+        // de var bleef bestaan en de let kijkt naar de meest recente waarde.
+
+        // heeft deze radiobutton de value die ik ken uit local storage
+        // if true -> inputElement.checked = true
+        // 
+        let inputElement = inputWafsVraag1[i];
         inputElement.oninput = function (e) {
             localStorage.setItem(inputElement.name, inputElement.value);
         }
-        inputElement.value = localStorage.getItem(inputElement.name);
+        // inputElement.value = localStorage.getItem(inputElement.name);
+        console.log(inputElement.value)
+        //if checked is true
+        // en ff kijken of oninput werkt op radiobuttons
     }
 }
 
+var inputWafsVraag1 = document.querySelectorAll('[name="wafs-vraag-1"],[name="wafs-vraag-2"]');
+
+if (inputWafsVraag1) {
+  for (var i = 0; i < inputWafsVraag1.length; i++) {
+    let inputElement = inputWafsVraag1[i];
+    let storedValue = localStorage.getItem(inputElement.name);
+    if (storedValue !== null) {
+      if (inputElement.type === "checkbox" || inputElement.type === "radio") {
+        inputElement.checked = (inputElement.value === storedValue);
+      } else {
+        inputElement.value = storedValue;
+      }
+    }
+    inputElement.oninput = function (e) {
+      localStorage.setItem(inputElement.name, inputElement.value);
+    };
+    console.log(inputElement.value);
+  }
+}
+
+
+
+
+// var inputWafsVraag1 = document.querySelectorAll('[name="wafs-vraag-1"],[name="wafs-vraag-2"]');
+
+// if (inputWafsVraag1) {
+//     for (var i = 0; i < inputWafsVraag1.length; i++) {
+
+//         let inputElement = inputWafsVraag1[i];
+//         inputElement.oninput = function (e) {
+//             localStorage.setItem(inputElement.name, inputElement.value);
+//         }
+//         console.log(inputElement.value)
+
+//     }
+// }
 
 // var inputWafsVraag1 = document.querySelectorAll('[name="wafs-vraag-1"]');
 // console.log(inputWafsVraag1);

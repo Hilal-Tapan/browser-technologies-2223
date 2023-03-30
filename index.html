@@ -32,7 +32,7 @@
         <h1>Enquete over de vakken van minor Web Development</h1>
         <br>
         <form id="form" action="./vak1.html">
-            <fieldset>
+            <fieldset id="gegevens">
                 <legend>Je gegevens</legend>
                 <!-- studentgegevens -->
                 <label for="voornaam">Voornaam<input type="text" required placeholder="we will judge you" name="firstName"
@@ -41,7 +41,7 @@
                 <label for="achternaam">Achternaam<input type="text" required id="lastName" name="lastName"
                         placeholder="pas maar op"></label>
                 <br>
-                <label for="studentnummer">Studentnummer<input type="text" required id="studentNumber" name="studentNumber"
+                <label for="studentnummer">Studentnummer<input type="number" pattern="[5-6][0-9]{8}" required id="studentNumber" name="studentNumber"
                         placeholder="voor in de database"></label>
                 <br>
                 <label for="email">Email<input type="email" name="email" id="email" required placeholder="Om erover te praten"></label>
