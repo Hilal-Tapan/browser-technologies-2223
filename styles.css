@@ -29,19 +29,24 @@ body {
 h1 {
     display: grid;
     place-content: center;
-    margin-bottom: 0;
+    text-align: center;
+    margin: 2em 0 1em 0
 }
+
 
 fieldset {
     background-color: var(--fieldset-color);
-}
-
-fieldset {
     border-radius: 1em;
     padding: 1em;
     border: black solid .3em;
-    width: 80vw;
+    width: 50vw;
 }
+
+@media screen and (max-width: 50em) {
+    fieldset {
+        width: 80vw;
+    }
+  }
 
 nav ol {
     display: flex;
@@ -65,32 +70,79 @@ nav ol li a {
     text-decoration: none;
 }
 
-nav ol li:has(a.current) {
-    filter:opacity(60%);
+a.current {
+    opacity: 40%;
+    /* filter:opacity(60%); */
 }
-nav ol li:hover{
+
+nav ol li:has(:not(.current):hover) {
     filter: drop-shadow(0 0 1em var(--drop-shadow));
-
-
 }
 
-#form {
+#form{
     display: grid;
     place-content: center;
+    /* max-width: 40em; */
 }
 
 #form button {
     width: 10em;
     height: 2em;
     min-width: 2em;
-    /* background-color: var(--button-color); */
     color: var(--button-text);
     border-radius: 1em;
     border: black .2em solid;
+    margin-top: 1em;
 }
 
 #form button:hover {
     background-color: var(--drop-shadow);
+}
+
+.radio > label {
+    font-size: 1.1em;
+}
+
+/*----------------------------------------------- gegevens --------------------------------------------------------*/
+#gegevens label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#gegevens label input {
+    border-radius: 1em;
+    padding: .5em;
+    border: black .2em solid;
+}
+
+#gegevens {
+    width: 40vw;
+}
+
+@media screen and (max-width: 44em) {
+    #gegevens {
+        width: 70vw;
+    }
+  }
+
+#gegevens input[type="text"]:valid {
+    flex: 1;
+}
+
+#gegevens label:has(input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid)::after {
+    content: '✓';
+    color: green;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+}
+
+#gegevens label:has(input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid)::after {
+    content: "verplicht veld";
+    color: red;
+    font-size: .8em;
+    padding-left: .5vw;
 }
 
 /*----------------------------------------------- radiobuttons ----------------------------------------------------*/
@@ -126,56 +178,13 @@ input[type="radio"]:checked+.emoji {
     filter: hue-rotate(90deg);
 }
 
-/*----------------------------------------------- gegevens --------------------------------------------------------*/
-#gegevens label {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+/*----------------------------------------------- Vakken --------------------------------------------------------*/
+fieldset > h2, h3 {
+    margin: .3em 0;
 }
 
-#gegevens label input {
-    border-radius: 1em;
-    padding: .5em;
-    border: black .2em solid;
+fieldset > p {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    margin: .3em 0;
 }
-
-#gegevens input[type="text"]:valid {
-    flex: 1;
-}
-
-#gegevens label:has(input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid)::after {
-    content: '✓';
-    color: green;
-    position: absolute;
-    top: 50%;
-    right: 1em;
-}
-
-#gegevens label:has(input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid)::after {
-    content: "verplicht veld";
-    color: red;
-    font-size: .8em;
-    padding-left: .5vw;
-}
-
-
-
-
-/* label.has input[type="text"]:invalid + span::after,
-label.has input[type="number"]:invalid + span::after,
-label.has input[type="email"]:invalid + span::after {
-  content: "Dit veld is verplicht";
-  color: red;
-  font-size: 1.2vw;
-  padding-left: 0.5vw;
-  display: none;
-}
-
-button[type="submit"]:focus + #gegevens label.has input:invalid + span::after {
-  display: inline-block;
-} */
-
-
-
-
-/*----------------------------------------------- ? --------------------------------------------------------*/
