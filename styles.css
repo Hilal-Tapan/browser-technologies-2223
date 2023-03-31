@@ -168,6 +168,12 @@ input[type="radio"] {
     font-size: 3vw;
 }
 
+@media screen and (max-width: 50em) {
+    .emoji {
+        font-size: 6vw;
+    }
+  }
+
 .emoji:hover {
     filter: hue-rotate(90deg);
 }
@@ -187,4 +193,8 @@ fieldset > p {
     font-family: sans-serif;
     line-height: 1.5em;
     margin: .3em 0;
+}
+
+.vraag {
+    font-family: sans-serif;
 }
