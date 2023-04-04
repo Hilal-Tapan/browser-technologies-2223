@@ -38,6 +38,12 @@ The user story that I chose is the survey. This is because I always use the basi
 ## Tests
 ### Turning CSS off
 
+
+![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/princeXML.png)
+
+![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/princeXML.png)
+
+
 ***
 
 ### Turning JS off
