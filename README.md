@@ -65,7 +65,7 @@ This is not the biggest problem since the user can still use the survey. They ca
 
 ***
 
-### Colorcontrast
+### Color contrast
 Contrast is important on websites because it affects readability, accessibility, and the overall user experience.
 When there is insufficient contrast between the text and the background, it can be difficult for users, especially those with visual impairments, to read the content. This can lead to eye strain, fatigue, and even discourage users from staying on the site.
 
@@ -106,9 +106,15 @@ Arrow Keys: Scroll through content, move/select radio buttons within a group, so
 ***
 
 ### Screenreader
+Screen readers are important because they enable users with visual impairments to access and navigate digital content on websites, mobile apps, and other digital interfaces. Screen readers are software programs that use synthesized speech or braille displays to read the text and other elements on the screen aloud, making it possible for users with visual impairments to understand the content and interact with the interface.
 
+Screen readers are also beneficial for users without visual impairments, such as those with cognitive or learning disabilities. By using screen readers to read the content aloud, users can better comprehend the information and retain it.
 
-***
+Therefore, designing digital interfaces that are accessible to screen readers is essential for creating an inclusive digital environment that is accessible to everyone. By designing with accessibility in mind, developers can create digital experiences that are inclusive, user-friendly, and equitable for all
+
+The first thing i noticed is that my file was english and that clashed with the screenreader, because my survey is in dutch. This caused the screenreader to read the Dutch text very weirdly. When i changed the language of the html files it was resolved. 
+
+The rest of the screenreader test seemed to work fine.
 
 
 ### Browsers that I'm going to use
@@ -215,6 +221,8 @@ When i opened the pdf i noticed the form is not centered, which is fine because 
 
 ## Sources
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:not
+* https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+* 
 
 
 
