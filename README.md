@@ -7,7 +7,7 @@ For the final assignment you design and create an interactive application accord
 
 
 ## The survey
-The user story that i chose is the survey. This is because i always use the basics of html and I wanted to go a little more in dept with the language. 
+The user story that I chose is the survey. This is because I always use the basics of html and I wanted to go a little more in dept with the language. 
 
 ### Requirements
 * Student data (name + number) required
@@ -21,21 +21,71 @@ The user story that i chose is the survey. This is because i always use the basi
 3. own insight (how well do you understand it)
 
 ## Functionalities
-* Error messages, when something is entered incorrectly or not filled in at all.
-* Not all the information at once.
+* Error messages, when something is entered incorrectly or not filled in at all
+* Not all the information at once
 * Local storage that lets you pick up where you left off
-* Clear interface that indicates where you are in the survey.
+* Clear interface that indicates where you are in the survey
 * Light/ dark mode
 * No visible radio buttons
-* Clear interface that allows user to return to previous questions.
+* Clear interface that allows user to return to previous questions
 
-## Browsers that I'm going to use
-* Safari: desktop and Iphone
+## Tests
+### Turning CSS off
+
+### Turning JS off
+
+### Colorcontrast
+
+### Mouse does not work
+
+### Screenreader
+
+
+### Browsers that I'm going to use
 * Google Chrome: desktop and mobile
 * Firefox: desktop and mobile
+* Safari: desktop and Iphone
 * Samsung Internet: mobile
 * UC browser/PrinceXML
 
+#### Google Chrome
+**Desktop**
+* :has() selector is supported
+* Form validation with css works as it should
+* Light mode and dark mode is supported
+* Data is stored in local storage
+
+**Mobile**
+* :has() selector is supported
+* Form validation with css works as it should
+* Light mode and dark mode is supported
+* Data is stored in local storage
+
+#### Firefox
+**Desktop**
+* :has() selector is not supported, for this we have the html **required fallback**.
+* Light mode and dark mode is supported
+* Data is stored in local storage
+
+**Mobile**
+* :has() selector is not supported, for this we have the html **required fallback**.
+* Light mode and dark mode is supported
+* Data is stored in local storage
+
+#### Safari
+**Desktop**
+
+
+**Mobile**
+
+
+#### Samsung internet
+**Desktop**
+
+**Mobile**
+
+
+#### PrinceXML
 
 ## Sources
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:not
