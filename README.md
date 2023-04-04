@@ -74,15 +74,32 @@ The user story that I chose is the survey. This is because I always use the basi
 
 #### Safari
 **Desktop**
+<ins>Old version</ins>
+I happen to have a very old version of safari on my laptop because my macbook is very old. This was perfect for testing!
+* I noticed some CSS things did not work like the :has selector. This is why the css form validation is not visible, only the HTML fallback is visible.
+* Light dark mode is working
+* Data is stored in local storage
 
+<ins>New version</ins>
+Obviously I had to test on a new version of safari as well and here everything seemed to work! 
+* The :has selector is working
+* Light dark mode is working
+* Data is stored in local storage
+* Form validation with css works as it should
 
 **Mobile**
+* :has() selector is supported
+* Form validation with css works as it should
+* Light mode and dark mode is supported
+* Data is stored in local storage
 
 
 #### Samsung internet
-**Desktop**
-
 **Mobile**
+* :has() selector is supported
+* Form validation with css works as it should
+* Light mode and dark mode is supported
+* Data is stored in local storage
 
 
 #### PrinceXML
