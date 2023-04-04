@@ -9,6 +9,8 @@ For the final assignment you design and create an interactive application accord
 ## The survey
 The user story that I chose is the survey. This is because I always use the basics of html and I wanted to go a little more in dept with the language. 
 
+***
+
 ### Requirements
 * Student data (name + number) required
 * By subject:
@@ -20,6 +22,8 @@ The user story that I chose is the survey. This is because I always use the basi
 2. explanation (how clearly is it explained)
 3. own insight (how well do you understand it)
 
+***
+
 ## Functionalities
 * Error messages, when something is entered incorrectly or not filled in at all
 * Not all the information at once
@@ -29,16 +33,28 @@ The user story that I chose is the survey. This is because I always use the basi
 * No visible radio buttons
 * Clear interface that allows user to return to previous questions
 
+***
+
 ## Tests
 ### Turning CSS off
 
+***
+
 ### Turning JS off
+
+***
 
 ### Colorcontrast
 
+***
+
 ### Mouse does not work
 
+***
+
 ### Screenreader
+
+***
 
 
 ### Browsers that I'm going to use
@@ -47,6 +63,8 @@ The user story that I chose is the survey. This is because I always use the basi
 * Safari: desktop and Iphone
 * Samsung Internet: mobile
 * UC browser/PrinceXML
+
+***
 
 #### Google Chrome
 **Desktop**
@@ -68,23 +86,28 @@ The user story that I chose is the survey. This is because I always use the basi
 * :has() selector is not supported, for this we have the html **required fallback**.
 * Light mode and dark mode is supported
 * Data is stored in local storage
+![A test image](image.png)
 
 **Mobile**
 * :has() selector is not supported, for this we have the html **required fallback**.
 * Light mode and dark mode is supported
 * Data is stored in local storage
+![A test image](image.png)
 
 ***
 
 #### Safari
 **Desktop**
+
 <ins>Old version</ins>
+
 I happen to have a very old version of safari on my laptop because my macbook is very old. This was perfect for testing!
 * I noticed some CSS things did not work like the :has selector. This is why the css form validation is not visible, only the HTML fallback is visible.
 * Light dark mode is working
 * Data is stored in local storage
 
 <ins>New version</ins>
+
 Obviously I had to test on a new version of safari as well and here everything seemed to work! 
 * The :has selector is working
 * Light dark mode is working
@@ -100,7 +123,9 @@ Obviously I had to test on a new version of safari as well and here everything s
 ***
 
 #### Samsung internet
+
 **Mobile**
+
 * :has() selector is supported
 * Form validation with css works as it should
 * Light mode and dark mode is supported
@@ -116,6 +141,8 @@ The first thing i noticed are the unsupported properties you get to see in your 
 
 When i opened the pdf i noticed the form is not centered, which is fine because it is still visible and usable. Another thing i've noticed is that the navigation links go to the web browser and not to another file in the PDF. But i guess this is normal.
 - insert foto 
+
+***
 
 ## Sources
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:not
