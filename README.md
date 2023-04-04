@@ -37,16 +37,31 @@ The user story that I chose is the survey. This is because I always use the basi
 
 ## Tests
 ### Turning CSS off
+Without CSS the whole survey works just fine. 
+Things that are not working are:
+- The color and user input feedback is also not available. 
+- Radio buttons are visible.
+- The progress menu is shown below each other.
 
+The things that are working well are:
+- Required form fields
+- To fill in a form
+- Get feedback with the browser's fallback error messages
+- The default dark and light mode of the browser.
 
-![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/princeXML.png)
-
-![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/princeXML.png)
-
+![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/zonder%20css.png)
+![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/zonder-css-lightdark.png)
+![zonder css](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/zonder%20css%20-2.png)
 
 ***
 
 ### Turning JS off
+The browser consists largely of javascript. Javascript ensures that your website becomes much more interactive and dynamic. But there is a group where some browsers don't support javascript for example lynx or people who have javascript off by default or people with devices that can't function very well with javascript. Gladly it is still possible to use the survey when javascript is disabled.
+
+What is not possible when javascript is disabled:
+- Data is not stored in the browser's localstorage
+
+This is not the biggest problem since the user can still use the survey. They can only not pick up where they left off.
 
 ***
 
