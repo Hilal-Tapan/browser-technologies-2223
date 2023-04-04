@@ -82,15 +82,31 @@ To check the contrast I used the inspect mode to hover over items and check if t
 To double check i used a web contrast checker. My survey also passed this test. Which is good news!
 ![contrast check](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/contrast.png)
 
-
 ***
 
 ### Mouse does not work
+it is important to be able to tab through a website because it is a key accessibility feature that enables users who have physical or mobility disabilities to navigate through the content using the keyboard.
 
+Some users may not be able to use a mouse or other pointing device to interact with a website, so they rely on the keyboard as their primary means of navigation. By using the tab key to move through links, form fields, and other interactive elements on the page, users with physical or mobility disabilities can access the content and functionality of the website just like any other user.
+
+Furthermore, tabbing through a website can also improve the efficiency of navigation for users who prefer using the keyboard or are simply more comfortable using it. It can be quicker to navigate through the website using the keyboard than constantly moving between the keyboard and the mouse.
+
+Web designers and developers need to ensure that all interactive elements on the website can be accessed using the keyboard, and that the tab order follows a logical sequence that makes it easy for users to move through the content. This is typically achieved by following the accessibility standards set out in the WCAG (Web Content Accessibility Guidelines), which provide guidelines on keyboard accessibility, among other things.
+
+In summary, being able to tab through a website is important because it enables users with physical or mobility disabilities to navigate through the content using the keyboard and improves the efficiency of navigation for all users. It is essential to follow accessibility standards to ensure that all users can access the content and functionality of the website.
+
+My whole survey works without a mouse. You can use your keyboard to do this.
+
+Tab: The focus must move through all interactive elements on the page
+Shift + Tab: Same as the Tab key, but in reverse order
+Enter/Return: Follows a link, activates (presses) a button
+Spacebar: Toggles checkbox values, activates buttons
+Arrow Keys: Scroll through content, move/select radio buttons within a group, sometimes move between interactive menu items or tabs.
 
 ***
 
 ### Screenreader
+
 
 ***
 
