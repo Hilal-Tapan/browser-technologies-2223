@@ -66,10 +66,27 @@ This is not the biggest problem since the user can still use the survey. They ca
 ***
 
 ### Colorcontrast
+Contrast is important on websites because it affects readability, accessibility, and the overall user experience.
+When there is insufficient contrast between the text and the background, it can be difficult for users, especially those with visual impairments, to read the content. This can lead to eye strain, fatigue, and even discourage users from staying on the site.
+
+Furthermore, contrast plays an important role in accessibility for users with color vision deficiencies. Designers need to ensure that there is sufficient contrast between all colors used on the website, not just between the text and background. This can be achieved by following WCAG (Web Content Accessibility Guidelines) contrast standards, which specify the minimum contrast ratio required between foreground and background colors.
+
+Lastly, contrast can also be used strategically to draw attention to important elements on the website, such as calls to action or headings. By using contrast effectively, designers can guide users through the content and make it easier for them to find what they are looking for.
+
+In summary, contrast is important on websites because it improves readability, accessibility, and user experience. It is essential to follow contrast standards and use contrast strategically to create a website that is both aesthetically pleasing and functional.
+
+To check the contrast I used the inspect mode to hover over items and check if the contrast level was green. This was the case. 
+
+![contrast check](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/contrast%201.png)
+
+To double check i used a web contrast checker. My survey also passed this test. Which is good news!
+![contrast check](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/contrast.png)
+
 
 ***
 
 ### Mouse does not work
+
 
 ***
 
