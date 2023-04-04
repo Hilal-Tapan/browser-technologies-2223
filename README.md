@@ -1,23 +1,48 @@
-# Browser Technologies @cmda-minor-web 2022 - 2023
-live site:https://hilal-tapan.github.io/browser-technologies-2223/
+# Browser Technologies - Survey
+In the Browser Technologies course we will examine what Progressive Enhancement is and how you can apply it to create good, robust, accessible websites. For everyone. The web is for everyone, in this course I will learn how to accomplish this.
 
-_Robuuste, toegankelijke websites ontwerpen en maken …_
+For the final assignment you design and create an interactive application according to the principle of Progressive Enhancement. We make sure that all users, with all browsers, can see, hear and/or feel the application as well as possible in every context. The most 'enhanced' version is 'delightful UX', beautiful and pleasant to use.
 
-Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruik. [Het web is voor iedereen](https://www.youtube.com/watch?v=UMNFehJIi0E). Het is geen gecontroleerde (programmeer) omgeving, je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, kwaliteit van het netwerk en er zijn mensen, allemaal verschillende mensen ...
-
-In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
-
-## Opdrachten
-het vak bestaat uit 2 opdrachten. We werken eerst even aan opdracht 1. Op dag twee beginnen we te werken aan de eindopdracht.
-
-### Wat is Progressive-enhancement en hoe werkt het?
-Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
-
-- [Opdracht 1 - NPM install Progressive Enhancement](assignments/opdracht-1.md)
+[Live site](https://hilal-tapan.github.io/browser-technologies-2223/)
 
 
-### Eindopdracht ✨ Progressively Enhanced Browser Technology
-Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
+## The survey
+The user story that i chose is the survey. This is because i always use the basics of html and I wanted to go a little more in dept with the language. 
+
+### Requirements
+* Student data (name + number) required
+* By subject:
+* name
+* teacher(s)
+* weeks in which you did the course
+* rating on a scale of 1-10 from:
+1. material (how hard is it)
+2. explanation (how clearly is it explained)
+3. own insight (how well do you understand it)
+
+## Functionalities
+* Error messages, when something is entered incorrectly or not filled in at all.
+* Not all the information at once.
+* Local storage that lets you pick up where you left off
+* Clear interface that indicates where you are in the survey.
+* Light/ dark mode
+* No visible radio buttons
+* Clear interface that allows user to return to previous questions.
+
+## Browsers that I'm going to use
+* Safari: desktop and Iphone
+* Google Chrome: desktop and mobile
+* Firefox: desktop and mobile
+* Samsung Internet: mobile
+* UC browser/PrinceXML
+
+
+## Sources
+* https://developer.mozilla.org/en-US/docs/Web/CSS/:not
+
+
+
+
 
 - [De eindopdracht - Progressive Enhanced Browser Technologie](assignments/eindopdracht.md)
 
