@@ -61,6 +61,8 @@ The user story that I chose is the survey. This is because I always use the basi
 * Light mode and dark mode is supported
 * Data is stored in local storage
 
+***
+
 #### Firefox
 **Desktop**
 * :has() selector is not supported, for this we have the html **required fallback**.
@@ -71,6 +73,8 @@ The user story that I chose is the survey. This is because I always use the basi
 * :has() selector is not supported, for this we have the html **required fallback**.
 * Light mode and dark mode is supported
 * Data is stored in local storage
+
+***
 
 #### Safari
 **Desktop**
@@ -93,6 +97,7 @@ Obviously I had to test on a new version of safari as well and here everything s
 * Light mode and dark mode is supported
 * Data is stored in local storage
 
+***
 
 #### Samsung internet
 **Mobile**
@@ -101,8 +106,16 @@ Obviously I had to test on a new version of safari as well and here everything s
 * Light mode and dark mode is supported
 * Data is stored in local storage
 
+***
 
 #### PrinceXML
+Finally, I had to choose an obscure browser. The browser i chose for this is princeXML. PrinceXML is a browser where you can convert HTML pages and CSS into a PDF file. I installed the free version on my windows computer and then made a pdf output of it with the terminal. On their site they also have a generator where you can throw in html pages and css files. The browser will then generate a PDF file for you.
+
+The first thing i noticed are the unsupported properties you get to see in your terminal.
+- insert foto
+
+When i opened the pdf i noticed the form is not centered, which is fine because it is still visible and usable. Another thing i've noticed is that the navigation links go to the web browser and not to another file in the PDF. But i guess this is normal.
+- insert foto 
 
 ## Sources
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:not
