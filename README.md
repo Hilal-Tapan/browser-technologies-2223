@@ -116,6 +116,7 @@ The first thing i noticed is that my file was english and that clashed with the 
 
 The rest of the screenreader test seemed to work fine.
 
+***
 
 ### Browsers that I'm going to use
 * Google Chrome: desktop and mobile
@@ -225,7 +226,7 @@ When i opened the pdf i noticed the form is not centered, which is fine because 
 * 
 
 
-
+***
 
 
 - [De eindopdracht - Progressive Enhanced Browser Technologie](assignments/eindopdracht.md)
