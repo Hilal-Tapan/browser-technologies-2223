@@ -282,6 +282,31 @@ When i opened the pdf i noticed the form is not centered, which is fine because 
 
 ***
 
+## Server side
+If local storage is not an option for storing data on the client side, a server-side solution is necessary. Here's a step-by-step plan for implementing such a solution:
+
+Choose a server-side technology: Depending on your requirements and familiarity, you can choose from several server-side technologies such as PHP, Node.js, Ruby on Rails, Django, Flask, etc.
+
+1. Set up a server: You will need to set up a server to run your chosen technology. You can use a cloud-based server such as AWS, Azure, or Google Cloud, or you can set up a local development server using software such as XAMPP, WAMP, or MAMP.
+
+2. Create a database: You will need to create a database to store your data. Depending on your server-side technology, you can use a SQL or NoSQL database such as MySQL, PostgreSQL, MongoDB, etc.
+
+3. Connect to the database: You will need to connect to the database from your server-side code. This involves configuring the connection settings and using a database driver or ORM.
+
+4. Create server-side endpoints: You will need to create endpoints (API routes) on the server-side that the client-side can use to send and receive data. This involves creating functions or methods that handle HTTP requests and interact with the database.
+
+5. Send data from client-side: On the client-side, you will need to send data to the server-side using AJAX or fetch requests. This involves creating functions that construct the request and handle the response from the server.
+
+6. Receive data on the client-side: On the client-side, you will need to receive data from the server-side using AJAX or fetch requests. This involves creating functions that handle the response from the server and update the UI accordingly.
+
+7. Secure your application: You will need to secure your application against common vulnerabilities such as SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), etc.
+
+8. Test and deploy: You will need to test your application thoroughly to ensure that it works as expected. Once you are satisfied, you can deploy your application to a production server.
+
+Overall, implementing a server-side solution requires a solid understanding of server-side technologies, databases, and web development concepts. It may also require knowledge of specific programming languages and frameworks.
+
+***
+
 ## Goals
 * you learn what Progressive enhancement is and how you can apply it.
 * you learn to research, test and implement Browser Technologies as an enhancement.
