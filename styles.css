@@ -26,6 +26,8 @@
 body {
     background-color: var(--background-color);
     padding: 1em;
+    font-family: "interstate", sans-serif;
+
 }
 
 h1 {
