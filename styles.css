@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/edf1wmn.css");
+
 :root {
     --background-color: lightgray;
     --fieldset-color:white;
@@ -30,7 +32,9 @@ h1 {
     display: grid;
     place-content: center;
     text-align: center;
-    margin: 2em 0 1em 0
+    margin: 2em 0 1em 0;
+    font-family: "interstate", sans-serif;
+
 }
 
 
@@ -187,14 +191,22 @@ input[type="radio"]:checked+.emoji {
 /*----------------------------------------------- Vakken --------------------------------------------------------*/
 fieldset > h2, h3 {
     margin: .3em 0;
+    font-family: "interstate", sans-serif;
 }
 
 fieldset > p {
-    font-family: sans-serif;
+    font-family: "interstate", sans-serif;
     line-height: 1.5em;
     margin: .3em 0;
 }
 
 .vraag {
-    font-family: sans-serif;
+    font-family: "interstate", sans-serif;
 }
+
+#klaar {
+    display:grid;
+    place-items: center;
+    margin-top: 25vh;
+}
+

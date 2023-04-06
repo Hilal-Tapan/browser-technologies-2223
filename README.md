@@ -9,6 +9,9 @@ For the final assignment you design and create an interactive application accord
 ## The survey
 The user story that I chose is the survey. This is because I always use the basics of html and I wanted to go a little more in dept with the language. 
 
+### Concept
+To improve the minor web development, I developed a survey where students can rate it per class. There are 7 classes and when the user is done they get a confirmation page where it thanks the students for filling in the survey.
+
 ***
 
 ### Requirements
@@ -24,7 +27,7 @@ The user story that I chose is the survey. This is because I always use the basi
 
 ***
 
-## Functionalities
+## Core functionalities
 * Error messages, when something is entered incorrectly or not filled in at all
 * Not all the information at once
 * Local storage that lets you pick up where you left off
@@ -33,6 +36,66 @@ The user story that I chose is the survey. This is because I always use the basi
 * No visible radio buttons
 * Clear interface that allows user to return to previous questions
 
+***
+
+## Progressive enhancement
+My progressive enhancement is the form validation that I improved. The html form validation is the fallback and I have improved this in the css.
+
+```css
+#gegevens input[type="text"]:valid {
+    flex: 1;
+}
+
+#gegevens label:has(input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid)::after {
+    content: '✓';
+    color: green;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+}
+
+#gegevens label:has(input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid)::after {
+    content: "verplicht veld";
+    color: red;
+    font-size: .8em;
+    padding-left: .5vw;
+}
+```
+If it happens that the :has selector does not work it has a HTML fallback which makes it still work.
+
+## Form validation
+Form validation is a crucial aspect of creating web forms. It ensures that the data submitted through a form meets certain criteria, such as required fields are filled, input format matches expected, and so on.
+
+HTML provides several built-in attributes that you can use to implement form validation without the need for JavaScript or other scripting languages. Some of these attributes are:
+
+* Required: This attribute is used to specify that a field must be filled in before the form can be submitted. For example, you can use this attribute to make sure that users enter a name, email address, or other critical information before submitting the form.
+
+* Pattern: This attribute is used to specify a regular expression that the input value must match. For example, you can use this attribute to validate a phone number or postal code.
+
+* Maxlength: This attribute is used to limit the maximum length of the input value. For example, you can use this attribute to make sure that a password is at least six characters long but no more than twelve characters.
+
+* Min and Max: These attributes are used to specify the minimum and maximum values for a number input field.
+
+* Type: This attribute is used to specify the type of input expected for a form field, such as text, email, password, number, date, and so on.
+
+```html
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" minlength="6" maxlength="12" required>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="18" max="100" required>
+
+  <input type="submit" value="Submit">
+```
 ***
 
 ## Tests
@@ -220,6 +283,12 @@ When i opened the pdf i noticed the form is not centered, which is fine because 
 
 ***
 
+## Goals
+* you learn what Progressive enhancement is and how you can apply it.
+* you learn to research, test and implement Browser Technologies as an enhancement.
+* you learn how to do Feature Detection and what to do if a 'feature' does not work or is not supported.
+
+***
 ## Sources
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:not
 * https://www.w3schools.com/css/css3_mediaqueries_ex.asp
