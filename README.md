@@ -307,6 +307,11 @@ Overall, implementing a server-side solution requires a solid understanding of s
 
 ***
 
+
+![Last-page](https://github.com/Hilal-Tapan/browser-technologies-2223/blob/main/img/last-page.png)
+
+***
+
 ## Goals
 * you learn what Progressive enhancement is and how you can apply it.
 * you learn to research, test and implement Browser Technologies as an enhancement.
